@@ -5,12 +5,12 @@
 
 
 /**
-  * list_len - Counts the number of elements in a linked list
+  * listint_len - Counts the number of elements in a linked list
   * @head: linked list to count
   *
   * Return: Number of elements in the linked list
   */
-size_t list_len(const listint_t *head)
+size_t listint_len(const listint_t *head)
 {
 	size_t length = 0;
 
