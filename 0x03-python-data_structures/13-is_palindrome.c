@@ -64,7 +64,7 @@ int is_palindrome(listint_t **head)
 	if (*head == NULL)
 		return (1);
 	start = *head;
-	len = list_len(start);
+	len = listint_len(start);
 	len_cyc = len * 2;
 	len_list = len_cyc - 2;
 	end = *head;
