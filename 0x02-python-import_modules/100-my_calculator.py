@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import sys
+from calculator_1 import add, sub, mul, div
 if __name__ == "__main__":
     n = len(sys.argv)
     if n != 4:
@@ -11,13 +12,13 @@ if __name__ == "__main__":
         n2 = int(sys.argv[3])
         match sys.argv[2]:
             case '+':
-                calc = n1 + n2
+                calc = add(n1, n2)
             case '-':
-                calc = n1 - n2
+                calc = sub(n1, n2)
             case '*':
-                calc = n1 * n2
+                calc = mul(n1, n2)
             case '/':
-                calc = n1 / n2
+                calc = div(n1, n2)
             case other:
                 print("Unknown operator. Available operators: +, -, * and /")
                 sys.exit(1)
