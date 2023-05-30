@@ -1,12 +1,19 @@
 #!/usr/bin/python3
+
+"""Define Sqaure class"""
+
+
 class Square:
+    """Represent a square"""
     def __init__(self, size=0):
         self.__size = size
 
+    """getter for square"""
     @property
     def size(self):
         return self.__size
 
+    """Setter for square"""
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
@@ -15,5 +22,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
+    """Get area of Square"""
     def area(self):
         return self.__size * self.__size
