@@ -9,7 +9,7 @@ class Square:
 
         Args:
             size (int): The size of new square
-        """    
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
