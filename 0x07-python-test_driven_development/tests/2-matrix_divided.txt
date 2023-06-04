@@ -1,0 +1,14 @@
+The "2-matrix_divided" module
+
+Import functions from module:
+	>>> add_integer = __import__("2-matrix_divided").matrix_divided
+
+check for docstring:
+	>>> doc = __import__("2-matrix_divided").__doc__
+	>>> len(doc) > 1
+	True
+
+check for docstring for funciton:
+	>>> doc_fun = __import__("2-matrix_divided").matrix_divided.__doc__
+	>>> len(doc_fun) > 1
+	True
