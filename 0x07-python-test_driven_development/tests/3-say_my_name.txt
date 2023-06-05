@@ -1,0 +1,40 @@
+The "3-say_my_name" module
+
+Import functions from module:
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+check for docstring:
+	>>> doc = __import__("3-say_my_name").__doc__
+	>>> len(doc) > 1
+	True
+
+check for docstring for funciton:
+	>>> doc_fun = __import__("3-say_my_name").say_my_name.__doc__
+	>>> len(doc_fun) > 1
+	True
+
+check for not string for first arg:
+	>>> say_my_name(1, "string")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+check for not string for first arg:
+	>>> say_my_name("String", 1)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+check for normal use:
+	>>> say_my_name("test first", "test last")
+	My name is test first test last
+
+check for passing 1 arg:
+	>>> say_my_name("String")
+	My name is String
+
+check for passing more than 2 arg
+	>>> say_my_name("string 1", "string 2", "string 3")
+	Traceback (most recent call last):
+	...
+	TypeError: say_my_name() takes 2 argument but 3 argument were passed
