@@ -13,7 +13,8 @@ class Rectangle:
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
-
+    
+    @classmethod
     def square(cls, size=0):
         """Returns new Rectangle instance with width == height"""
         return cls(size, size)
