@@ -56,4 +56,4 @@ class Rectangle:
 
     def __repr__(self):
         """Returns a string of the rectangle for use with eval()"""
-        return print("Rectangle({}, {})".format(self.width, self.height))
+        return f"Rectangle({self.width}, {self.height})"
