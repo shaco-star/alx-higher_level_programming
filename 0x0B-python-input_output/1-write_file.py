@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 
-"""Define read_file function that read file"""
+"""Define write_file function that read file"""
 
 
-def read_file(filename="", text=""):
+def write_file(filename="", text=""):
     """print the content of file
     Args
         filename : file that will read
