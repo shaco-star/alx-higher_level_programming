@@ -19,7 +19,6 @@ def print_stats():
 
 
 try:
-
     for line in sys.stdin:
         line_count += 1
         parts = line.split()
