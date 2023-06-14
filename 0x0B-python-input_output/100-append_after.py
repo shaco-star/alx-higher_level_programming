@@ -11,7 +11,7 @@ def append_after(filename="", search_string="", new_string=""):
     :param search_string: The string to search for in the file.
     :param new_string: The string to insert into the file.
     """
-    with open(filename, "r") as f:
+    with open(filename, "r", encoding="utf-8") as f:
         lines = f.readlines()
 
     new_lines = []
@@ -20,5 +20,5 @@ def append_after(filename="", search_string="", new_string=""):
         if search_string in line:
             new_lines.append(new_string + "\n")
 
-    with open(filename, "w") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
