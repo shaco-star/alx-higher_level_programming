@@ -165,7 +165,7 @@ class Rectangle(Base):
         if len(args) != 0:
             for key, val in kwargs.item():
                 setattr(self, key, val)
-                return
+            return
         try:
             self.id = args[0]
             self.width = args[1]
