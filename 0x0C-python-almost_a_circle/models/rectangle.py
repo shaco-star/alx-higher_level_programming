@@ -163,9 +163,10 @@ class Rectangle(Base):
         """Assigns value argument to attributes
         """
         if len(args) != 0:
-            for key, val in kwargs.item():
+            for key, val in kwargs.items():
                 self.__ setattr__(key, val)
             return
+
         try:
             self.id = args[0]
             self.width = args[1]
