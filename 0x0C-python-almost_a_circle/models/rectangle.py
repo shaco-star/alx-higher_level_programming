@@ -164,7 +164,7 @@ class Rectangle(Base):
         """
         if len(args) != 0:
             for key, val in kwargs.item():
-               self.__ setattr__(key, val)
+                self.__ setattr__(key, val)
             return
         try:
             self.id = args[0]
