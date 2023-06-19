@@ -159,9 +159,13 @@ class Rectangle(Base):
                                                        self.__width,
                                                        self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns value argument to attributes
         """
+        if len(args) != 0:
+            for key, val in kwargs.item():
+                setattr(self, key, val)
+                return
         try:
             self.id = args[0]
             self.width = args[1]
