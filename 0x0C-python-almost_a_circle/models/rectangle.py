@@ -162,7 +162,7 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """Assigns value argument to attributes
         """
-        if len(args) != 0:
+        if len(args) == 0:
             for key, val in kwargs.items():
                 setattr(self, key, val)
             return
