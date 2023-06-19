@@ -140,4 +140,4 @@ class Rectangle(Base):
         """
         Return : area of rectangle
         """
-        return self.__wdith * self.__height
+        return (self.__width * self.__height)
