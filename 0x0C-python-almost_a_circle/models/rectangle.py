@@ -146,8 +146,9 @@ class Rectangle(Base):
         """
         Prints rectangle in # simbol
         """
+        print("\n" * self.y, end="")
         for i in range(self.height):
-            print("#" * self.width)
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """
@@ -157,3 +158,6 @@ class Rectangle(Base):
                                                        self.__y,
                                                        self.__width,
                                                        self.height)
+
+    def update(self, *args):
+        pass
