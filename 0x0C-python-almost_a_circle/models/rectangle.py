@@ -141,3 +141,19 @@ class Rectangle(Base):
         Return : area of rectangle
         """
         return (self.__width * self.__height)
+
+    def display(self):
+        """
+        Prints rectangle in # simbol
+        """
+        for i in range(self.height):
+            print("#" * self.width)
+
+    def __str__(self):
+        """
+        Return : format of rectangle
+        """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
+                                                       self.__y,
+                                                       self.__width,
+                                                       self.height)
