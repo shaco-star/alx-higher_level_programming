@@ -60,6 +60,13 @@ class Base:
         Return class instantiated for a dictionary
         """
         if dictionary:
-            new = cls(1, 1) if clc.__name__ == "Rectangle" else cls(1)
+            new = cls(1, 1) if cls.__name__ == "Rectangle" else cls(1)
             new.update(**dictionary)
             return new
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        Return list of classes from JSON strings file
+        """
+        filename = str(cls.__name__) + ".json"
