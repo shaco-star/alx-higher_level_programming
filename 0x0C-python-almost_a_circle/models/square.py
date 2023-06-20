@@ -79,7 +79,7 @@ class Square(Rectangle):
         """
         Return dictionary of Sqaure
         """
-        return {'id': getattr(self, 'id'),
-                'size': getattr(self, 'width'),
-                'x': getattr(self, 'x'),
-                'y': getattr(self, 'y')}
+        return {'id': getattr(self, "id"),
+                'size': getattr(self, "width"),
+                'x': getattr(self, "x"),
+                'y': getattr(self, "y")}
