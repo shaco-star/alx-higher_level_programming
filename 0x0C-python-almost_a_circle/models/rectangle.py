@@ -177,8 +177,11 @@ class Rectangle(Base):
             pass
 
     def to_dictionary(self):
-        return {'id': getattr(self, 'id'),
+        """
+        Return dictionary for rectangle
+        """
+        return {'x': getattr(self, 'x'),
+                'y': getattr(self, 'y'),
+                'id': getattr(self, 'id'),
                 'width': getattr(self, 'width'),
-                'height': getattr(self, 'height'),
-                'x': getattr(self, 'x'),
-                'y': getattr(self, 'y')}
+                'height': getattr(self, 'height')}
