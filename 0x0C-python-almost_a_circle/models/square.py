@@ -74,4 +74,3 @@ class Square(Rectangle):
             self.y = args[3]
         except IndexError:
             pass
-
