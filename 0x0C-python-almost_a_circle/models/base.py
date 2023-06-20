@@ -53,3 +53,12 @@ class Base:
             else:
                 dic = [x.to_dictionary() for x in list_objs]
                 file.write(Base.to_json_string(dic))
+
+    def create(cls, **dictionary):
+        """
+        Return class instantiated for a dictionary
+        """
+        if dictionary:
+            new = cls(1, 1) if clc.__name__ == "Rectangle" else cls(1)
+            new.update(**dictionary)
+            return new
