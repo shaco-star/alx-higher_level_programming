@@ -69,4 +69,10 @@ class Base:
         """
         Return list of classes from JSON strings file
         """
-        filename = str(cls.__name__) + ".json"
+        filename = f"{cls.__name__}.json"
+        try:
+            with open(filename, 'r') as file:
+                dic = Base.from_json_string(file.read())
+                return [cls.create(**d) for d in dic]
+        except IOError:
+            return []
