@@ -54,6 +54,7 @@ class Base:
                 dic = [x.to_dictionary() for x in list_objs]
                 file.write(Base.to_json_string(dic))
 
+    @classmethod
     def create(cls, **dictionary):
         """
         Return class instantiated for a dictionary
