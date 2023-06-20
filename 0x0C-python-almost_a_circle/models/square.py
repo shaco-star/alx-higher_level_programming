@@ -75,6 +75,7 @@ class Square(Rectangle):
         except IndexError:
             pass
 
+
     def to_dictionary(self):
         """
         Return dictionary of Sqaure
