@@ -27,6 +27,6 @@ class Base:
         """
         Convert dictionary to json format
         """
-        if list_dictionaries is None:
+        if list_dictionaries is None or list_dictionaries == "[]":
             return "[]"
         return json.dumps(list_dictionaries)
