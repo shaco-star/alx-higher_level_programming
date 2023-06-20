@@ -2,7 +2,7 @@
 
 """Define square class"""
 
-from main import Rectangle
+from models.rectangle  import Rectangle
 
 
 class Square(Rectangle):
@@ -26,7 +26,6 @@ class Square(Rectangle):
     def __str__(self):
         """
         Return format of Square
-        :return:
         """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
                                                  self.y, self.width)
