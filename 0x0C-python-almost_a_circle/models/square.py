@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-from main import Rectangle
-
 """Define square class"""
+
+from main import Rectangle
 
 
 class Square(Rectangle):
