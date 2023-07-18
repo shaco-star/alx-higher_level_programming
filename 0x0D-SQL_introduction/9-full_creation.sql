@@ -1,5 +1,5 @@
 -- creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.
---second_table description:
+-- second_table description:
 -- id INT
 -- name VARCHAR(256)
 -- score INT
