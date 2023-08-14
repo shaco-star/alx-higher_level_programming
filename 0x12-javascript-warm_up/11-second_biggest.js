@@ -1,8 +1,6 @@
 #!/usr/bin/node
 
-import { argv } from 'node:process';
-
-const args = argv.slice(2).map(arg => parseInt(arg));
+const args = process.argv.slice(2).map(arg => parseInt(arg));
 if (args.length <= 1) {
   console.log(0);
 } else {
