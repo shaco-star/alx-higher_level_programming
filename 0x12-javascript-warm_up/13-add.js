@@ -4,4 +4,4 @@ function add(a, b) {
   return (a + b);
 };
 
-model.exports = { add }
+module.exports = { add }
