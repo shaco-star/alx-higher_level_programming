@@ -2,18 +2,15 @@
 
 // Create instance method charPrint
 
-const square = require('./5-square');
+const SquareParent = require('./5-square.js');
 
-module.exports = class Square extends square {
-  constructor (size) {
-    super(size, size);
-  }
-
-  double () {
-    super.double();
-  }
-
-  charPrint (c = 'X') {
-    super.print(c);
-  }
-};
+module.exports = class Square extends SquareParent {
+    charPrint(c) {
+        if (c === undefined) {
+            c = 'X';
+        }
+        for (let i = 0; i < this.height; i++) {
+            console.log(c.repeat(this.width));
+        }
+    }
+}
