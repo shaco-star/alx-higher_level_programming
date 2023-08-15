@@ -2,7 +2,6 @@
 
 // Print number of arguments
 
-
 let counter = 0;
 
 exports.logMe = function count (item) {
