@@ -1,8 +1,16 @@
 #!/usr/bin/python3
+
+"""
+Print database
+"""
+
 import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
+    """
+    Access the database and print states
+    """
     username = argv[1]
     password = argv[2]
     database = argv[3]
