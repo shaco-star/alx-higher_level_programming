@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 """
 connecting to SQL using ORM
 """
