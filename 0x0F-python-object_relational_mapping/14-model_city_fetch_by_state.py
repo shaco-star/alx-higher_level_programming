@@ -13,6 +13,7 @@ from sqlalchemy.orm import sessionmaker
 if __name__ == "__main__":
     """using ORM to query State table in MYSQL
     """
+
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]),
                            pool_pre_ping=True)
@@ -21,6 +22,7 @@ if __name__ == "__main__":
     session = Session()
     query = session.query(City, State).join(State).order_by(City.id)
     for city, state in query.all():
-        print("{}: ({}) {}".format(state.name, city.id, city.name))
+        print("{}: ({:d}) {}".format(state.name, city.id, city.name))
+
     session.commit()
     session.close()
