@@ -1,5 +1,4 @@
-#!/usr/bin/python
-
+#!/usr/bin/python3
 """
 connecting to SQL using ORM
 """
@@ -15,5 +14,6 @@ class State(Base):
     Creating class State that will connect to state table
     """
     __tablename__ = 'states'
+
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
